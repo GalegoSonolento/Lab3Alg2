@@ -24,4 +24,12 @@ public abstract class Funcionario {
     public void setCPF(String CPF) {
         this.CPF = CPF;
     }
+
+    @Override
+    public String toString() {
+        return "Funcionario{" +
+                "nome='" + nome + '\'' +
+                ", CPF='" + CPF + '\'' +
+                '}';
+    }
 }

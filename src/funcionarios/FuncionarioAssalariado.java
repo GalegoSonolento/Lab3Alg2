@@ -1,18 +1,25 @@
 package funcionarios;
 
 public class FuncionarioAssalariado extends Funcionario{
-    private double salario;
+    private double salarioSemanal;
 
     public FuncionarioAssalariado(String nome, String CPF, double salario) {
         super(nome, CPF);
-        this.salario = salario;
+        this.salarioSemanal = salario;
     }
 
-    public double getSalario() {
-        return salario;
+    public double getSalarioSemanal() {
+        return salarioSemanal;
     }
 
-    public void setSalario(double salario) {
-        this.salario = salario;
+    public void setSalarioSemanal(double salarioSemanal) {
+        this.salarioSemanal = salarioSemanal;
+    }
+
+    @Override
+    public String toString() {
+        return "FuncionarioAssalariado{" +
+                "salarioSemanal=" + salarioSemanal +
+                "} " + super.toString();
     }
 }
